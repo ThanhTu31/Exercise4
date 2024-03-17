@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="current_time_label">Current Time</string>
+    <string name="show_time_label">Show Current Time</string>
+</resources>
