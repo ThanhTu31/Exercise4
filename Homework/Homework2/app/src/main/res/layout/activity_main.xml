@@ -3,30 +3,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/edit_text"
+        android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter text"
-        android:layout_marginBottom="16dp"/>
+        android:inputType="text"
+        android:hint="Enter text to analyze"
+        android:layout_margin="20dp"/>
 
     <Button
-        android:id="@+id/submit_button"
+        android:id="@+id/analyzeButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/edit_text"
-        android:layout_alignParentEnd="true"
-        android:text="Submit"/>
+        android:text="Analyze"
+        android:layout_below="@id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/sentimentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sentiment: "
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/analyzeButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
 
     <ImageView
-        android:id="@+id/icon_image"
+        android:id="@+id/sentimentIcon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/submit_button"
+        android:layout_below="@id/sentimentTextView"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/ic_launcher_background"/>
+        android:layout_marginTop="10dp"/>
+
 </RelativeLayout>
